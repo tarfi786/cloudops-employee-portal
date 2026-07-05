@@ -44,26 +44,6 @@ Gunicorn service is restarted
 
 Application is live 🎉
 
-📂 Project Structure
-cloudops-employee-portal/
-│
-├── app.py
-├── models.py
-├── routes.py
-├── config.py
-├── requirements.txt
-│
-├── templates/
-├── static/
-├── uploads/
-│
-├── s3_config.py
-├── database/
-│
-└── .github/workflows/
-    └── deploy.yml
-
-
 🔐 Security Features
 SSH Key-based authentication (no password login)
 Security Group controlled access (port 22, 5000)
