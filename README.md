@@ -15,9 +15,6 @@ Latest code is pulled and dependencies installed
 Gunicorn service is restarted
 Application is live instantly
 
-📌 Architecture Diagram:
-
-![Architecture Diagram](architecture.png)
 
 ⚙️ Tech Stack
 🖥️ Backend
