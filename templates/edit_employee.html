@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Edit Employee | CloudOps Employee Portal{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- Sidebar -->
+        <div class="col-lg-2 sidebar text-white p-4">
+            <h3 class="logo text-center mb-5">☁ CloudOps</h3>
+        </div>
+
+        <!-- Main -->
+        <div class="col-lg-10 p-4">
+
+            <div class="topbar mb-4">
+                <h2>Edit Employee</h2>
+            </div>
+
+            <div class="card-box">
+
+                <form method="POST">
+
+                    <input type="text" name="full_name"
+                           value="{{ emp.full_name }}"
+                           class="form-control mb-3">
+
+                    <input type="email" name="email"
+                           value="{{ emp.email }}"
+                           class="form-control mb-3">
+
+                    <input type="text" name="phone"
+                           value="{{ emp.phone }}"
+                           class="form-control mb-3">
+
+                    <input type="text" name="department"
+                           value="{{ emp.department }}"
+                           class="form-control mb-3">
+
+                    <input type="text" name="role"
+                           value="{{ emp.role }}"
+                           class="form-control mb-3">
+
+                    <input type="number" name="salary"
+                           value="{{ emp.salary }}"
+                           class="form-control mb-3">
+
+                    <button class="btn btn-primary w-100">
+                        Update Employee
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

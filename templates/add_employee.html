@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-lg-10 p-4">
+
+            <div class="card-box">
+
+                <form method="POST" enctype="multipart/form-data">
+
+                    <input type="text" name="full_name" class="form-control mb-3" placeholder="Full Name">
+
+                    <input type="email" name="email" class="form-control mb-3" placeholder="Email">
+
+                    <input type="text" name="phone" class="form-control mb-3" placeholder="Phone">
+
+                    <select name="department" class="form-control mb-3">
+                        <option>DevOps</option>
+                        <option>HR</option>
+                        <option>Finance</option>
+                    </select>
+
+                    <input type="text" name="role" class="form-control mb-3" placeholder="Role">
+
+                    <input type="number" name="salary" class="form-control mb-3" placeholder="Salary">
+
+                    <!-- IMAGE UPLOAD -->
+                    <input type="file" name="profile_pic" class="form-control mb-3">
+
+                    <button class="btn btn-primary w-100">
+                        Save Employee
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
